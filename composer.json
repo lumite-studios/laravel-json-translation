@@ -1,6 +1,6 @@
 {
     "name": "lumite-studios/laravel-json-translation",
-    "description": "JSON version of the default Laravel translation files.",
+    "description": "JSON versions of the default Laravel translation files.",
     "type": "library",
     "license": "proprietary",
     "authors": [
