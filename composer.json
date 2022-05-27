@@ -1,0 +1,30 @@
+{
+    "name": "lumite-studios/laravel-json-translation",
+    "description": "JSON version of the default Laravel translation files.",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Lumite Studios",
+            "email": "support@lumitestudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^9.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LumiteStudios\\JSONTranslations\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LumiteStudios\\JSONTranslations\\TranslationServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
