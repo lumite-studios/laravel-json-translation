@@ -15,7 +15,11 @@ class Loader extends FileLoader
      */
     public function addJsonPath($data)
     {
-        $this->jsonPaths[$data['prefix']] = $data['path'];
+        if (is_array($data)) {
+            $this->jsonPaths[$data['prefix']] = $data['path'];
+        } else {
+            $this->jsonPaths[] = $data;
+        }
     }
 
     /**
