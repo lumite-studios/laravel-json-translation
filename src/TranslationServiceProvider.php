@@ -23,6 +23,8 @@ class TranslationServiceProvider extends ServiceProvider
         $this->app->singleton('translation.loader', function ($app) {
             return new Loader($app['files'], $app['path.lang']);
         });
+
+        $this->loadJsonTranslationsWithPrefix("{$this->root}/lang/validation", "validation");
     }
 
     /**
