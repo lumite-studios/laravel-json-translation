@@ -11,7 +11,7 @@ class TranslationServiceProvider extends ServiceProvider
      * The direct path.
      * @var string
      */
-    protected string $root = __DIR__ . '/..';
+    protected string $langDirectory = __DIR__ . '/../lang';
 
     /**
      * Perform post-registration booting of services.
@@ -24,7 +24,7 @@ class TranslationServiceProvider extends ServiceProvider
             return new Loader($app['files'], $app['path.lang']);
         });
 
-        $this->loadJsonTranslationsWithPrefix("{$this->root}/lang/validation", "validation");
+        $this->loadJsonTranslationsWithPrefix("{$this->langDirectory}/validation", "validation");
     }
 
     /**
